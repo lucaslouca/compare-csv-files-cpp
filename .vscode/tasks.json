@@ -1,0 +1,47 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "build compapp",
+            "command": "./make-me",
+            "args": [],
+            "options": {
+                "cwd": "${workspaceFolder}/compare"
+            },
+            "problemMatcher": {
+                "base": "$gcc",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/compare/src"
+                ]
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true,
+            },
+            "detail": "make-me => Makefile => g++"
+        },
+        {
+            "type": "cppbuild",
+            "label": "build genapp",
+            "command": "./make-me",
+            "args": [],
+            "options": {
+                "cwd": "${workspaceFolder}/benchmark/generate"
+            },
+            "problemMatcher": {
+                "base": "$gcc",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}/benchmark/generate/src"
+                ]
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true,
+            },
+            "detail": "make-me => Makefile => g++"
+        }
+    ]
+}
